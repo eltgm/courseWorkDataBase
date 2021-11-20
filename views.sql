@@ -16,7 +16,7 @@ FROM service s;
 SELECT *
 FROM PRICE_LIST;
 
--- Создаем представление с списком врачей
+-- Создаем представление со списком врачей
 CREATE VIEW DOC_LIST AS
 SELECT e.fio, ms.name, e.experience
 FROM employee e

@@ -101,7 +101,6 @@ FROM medical_history mh
          INNER JOIN client c on c.id = mh.client_id
 GROUP BY mh.client_id, c.fio;
 
-
 -- Список услуг, для которых необходимо нанять специалистов
 SELECT s.service_name
 FROM service s
