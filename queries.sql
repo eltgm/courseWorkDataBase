@@ -1,6 +1,5 @@
 -- Получить всех врачей и услуги, которые они предоставляют
-SELECT e.id,
-       e.fio,
+SELECT e.fio,
        service_name
 FROM service s
          INNER JOIN employee e ON s.medic_specialty_id = e.medic_specialty_id;

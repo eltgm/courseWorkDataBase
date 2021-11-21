@@ -14,3 +14,7 @@ CREATE TRIGGER update_medical_history
     ON appointment
     FOR EACH ROW
 EXECUTE PROCEDURE insert_medical_history();
+
+-- Проверяем
+INSERT INTO appointment(client_id, employee_id, service_id, time, office, note)
+VALUES (1, 1, 1, now() + interval '1 hour', 'cabtr', null)
